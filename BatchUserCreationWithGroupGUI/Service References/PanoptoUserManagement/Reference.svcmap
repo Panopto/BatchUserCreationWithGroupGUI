@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ebd03975-c78b-42d6-8acd-091ce6374b31" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://testing.panopto.com/Panopto/PublicAPI/4.2/UserManagement.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserManagement.xsd" MetadataType="Schema" ID="3a29b86c-7a73-490b-96e3-7c8c18d265c2" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/UserManagement.svc?xsd=xsd3" />
+    <MetadataFile FileName="UserManagement1.xsd" MetadataType="Schema" ID="1afd58de-98d9-440d-849b-430b556ae9cb" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/UserManagement.svc?xsd=xsd0" />
+    <MetadataFile FileName="UserManagement.wsdl" MetadataType="Wsdl" ID="33540767-0007-44ff-9267-638101ec6630" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPI/4.2/UserManagement.svc?wsdl" />
+    <MetadataFile FileName="UserManagement2.xsd" MetadataType="Schema" ID="b903bf91-169f-44dc-b0af-46a797437918" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/UserManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="UserManagement3.xsd" MetadataType="Schema" ID="759d6324-770d-4cd7-bded-7a28c8699fba" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/UserManagement.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
