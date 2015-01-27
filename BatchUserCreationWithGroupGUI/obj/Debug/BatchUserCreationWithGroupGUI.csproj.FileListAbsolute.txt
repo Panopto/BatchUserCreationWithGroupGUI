@@ -10,3 +10,4 @@ C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUserCreationWithGroupGU
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUserCreationWithGroupGUI\BatchUserCreationWithGroupGUI\obj\Debug\BatchUserCreationWithGroupGUI.csproj.GenerateResource.Cache
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUserCreationWithGroupGUI\BatchUserCreationWithGroupGUI\obj\Debug\BatchUserCreationWithGroupGUI.exe
 C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUserCreationWithGroupGUI\BatchUserCreationWithGroupGUI\obj\Debug\BatchUserCreationWithGroupGUI.pdb
+C:\Users\dliu\Documents\Visual Studio 2012\Projects\BatchUserCreationWithGroupGUI\BatchUserCreationWithGroupGUI\obj\Debug\BatchUserCreationWithGroupGUI.csprojResolveAssemblyReference.cache
