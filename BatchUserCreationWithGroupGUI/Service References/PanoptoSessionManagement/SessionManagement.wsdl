@@ -27,11 +27,12 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" />
-      <xsd:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" />
-      <xsd:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ISessionManagement_AddFolder_InputMessage">
@@ -87,6 +88,12 @@
   </wsdl:message>
   <wsdl:message name="ISessionManagement_GetFoldersList_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetFoldersListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISessionManagement_GetCreatorFoldersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreatorFoldersList" />
+  </wsdl:message>
+  <wsdl:message name="ISessionManagement_GetCreatorFoldersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreatorFoldersListResponse" />
   </wsdl:message>
   <wsdl:message name="ISessionManagement_UpdateSessionName_InputMessage">
     <wsdl:part name="parameters" element="tns:UpdateSessionName" />
@@ -305,6 +312,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ISessionManagement/GetFoldersList" message="tns:ISessionManagement_GetFoldersList_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISessionManagement/GetFoldersListResponse" message="tns:ISessionManagement_GetFoldersList_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetCreatorFoldersList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISessionManagement/GetCreatorFoldersList" message="tns:ISessionManagement_GetCreatorFoldersList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISessionManagement/GetCreatorFoldersListResponse" message="tns:ISessionManagement_GetCreatorFoldersList_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="UpdateSessionName">
       <wsdl:input wsaw:Action="http://tempuri.org/ISessionManagement/UpdateSessionName" message="tns:ISessionManagement_UpdateSessionName_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ISessionManagement/UpdateSessionNameResponse" message="tns:ISessionManagement_UpdateSessionName_OutputMessage" />
@@ -503,6 +514,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetFoldersList">
       <soap:operation soapAction="http://tempuri.org/ISessionManagement/GetFoldersList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreatorFoldersList">
+      <soap:operation soapAction="http://tempuri.org/ISessionManagement/GetCreatorFoldersList" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -783,7 +803,7 @@
   </wsdl:binding>
   <wsdl:service name="SessionManagement">
     <wsdl:port name="BasicHttpBinding_ISessionManagement" binding="tns:BasicHttpBinding_ISessionManagement">
-      <soap:address location="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc" />
+      <soap:address location="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

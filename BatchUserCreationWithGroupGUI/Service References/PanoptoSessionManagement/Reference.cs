@@ -92,7 +92,7 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Folder", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soa" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="Folder", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soa" +
         "p")]
     [System.SerializableAttribute()]
     public partial class Folder : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -116,7 +116,16 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
         private System.Guid[] ChildFoldersField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool DeliveriesHaveSpecifiedOrderField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string DescriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmbedUploaderUrlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmbedUrlField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool EnablePodcastField;
@@ -230,6 +239,19 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool DeliveriesHaveSpecifiedOrder {
+            get {
+                return this.DeliveriesHaveSpecifiedOrderField;
+            }
+            set {
+                if ((this.DeliveriesHaveSpecifiedOrderField.Equals(value) != true)) {
+                    this.DeliveriesHaveSpecifiedOrderField = value;
+                    this.RaisePropertyChanged("DeliveriesHaveSpecifiedOrder");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Description {
             get {
                 return this.DescriptionField;
@@ -238,6 +260,32 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
                 if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
                     this.DescriptionField = value;
                     this.RaisePropertyChanged("Description");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmbedUploaderUrl {
+            get {
+                return this.EmbedUploaderUrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmbedUploaderUrlField, value) != true)) {
+                    this.EmbedUploaderUrlField = value;
+                    this.RaisePropertyChanged("EmbedUploaderUrl");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EmbedUrl {
+            get {
+                return this.EmbedUrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmbedUrlField, value) != true)) {
+                    this.EmbedUrlField = value;
+                    this.RaisePropertyChanged("EmbedUrl");
                 }
             }
         }
@@ -1069,7 +1117,7 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ListSessionsResponse", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soa" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="ListSessionsResponse", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soa" +
         "p")]
     [System.SerializableAttribute()]
     public partial class ListSessionsResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1254,7 +1302,7 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ListFoldersResponse", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soa" +
+    [System.Runtime.Serialization.DataContractAttribute(Name="ListFoldersResponse", Namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soa" +
         "p")]
     [System.SerializableAttribute()]
     public partial class ListFoldersResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1635,6 +1683,12 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISessionManagement/GetFoldersList", ReplyAction="http://tempuri.org/ISessionManagement/GetFoldersListResponse")]
         System.Threading.Tasks.Task<BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse> GetFoldersListAsync(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISessionManagement/GetCreatorFoldersList", ReplyAction="http://tempuri.org/ISessionManagement/GetCreatorFoldersListResponse")]
+        BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse GetCreatorFoldersList(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISessionManagement/GetCreatorFoldersList", ReplyAction="http://tempuri.org/ISessionManagement/GetCreatorFoldersListResponse")]
+        System.Threading.Tasks.Task<BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse> GetCreatorFoldersListAsync(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISessionManagement/UpdateSessionName", ReplyAction="http://tempuri.org/ISessionManagement/UpdateSessionNameResponse")]
         void UpdateSessionName(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, System.Guid sessionId, string name);
         
@@ -1913,6 +1967,14 @@ namespace BatchUserCreationWithGroupGUI.PanoptoSessionManagement {
         
         public System.Threading.Tasks.Task<BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse> GetFoldersListAsync(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery) {
             return base.Channel.GetFoldersListAsync(auth, request, searchQuery);
+        }
+        
+        public BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse GetCreatorFoldersList(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery) {
+            return base.Channel.GetCreatorFoldersList(auth, request, searchQuery);
+        }
+        
+        public System.Threading.Tasks.Task<BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersResponse> GetCreatorFoldersListAsync(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, BatchUserCreationWithGroupGUI.PanoptoSessionManagement.ListFoldersRequest request, string searchQuery) {
+            return base.Channel.GetCreatorFoldersListAsync(auth, request, searchQuery);
         }
         
         public void UpdateSessionName(BatchUserCreationWithGroupGUI.PanoptoSessionManagement.AuthenticationInfo auth, System.Guid sessionId, string name) {

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" />
-  <xs:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" />
-  <xs:import schemaLocation="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" />
+  <xs:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" />
+  <xs:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" />
+  <xs:import schemaLocation="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <xs:element name="AddFolder">
     <xs:complexType>
       <xs:sequence>
@@ -17,7 +18,7 @@
   <xs:element name="AddFolderResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="AddFolderResult" nillable="true" type="q3:Folder" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="AddFolderResult" nillable="true" type="q3:Folder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -49,7 +50,7 @@
   <xs:element name="GetFoldersByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="GetFoldersByIdResult" nillable="true" type="q9:ArrayOfFolder" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetFoldersByIdResult" nillable="true" type="q9:ArrayOfFolder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -64,7 +65,7 @@
   <xs:element name="GetFoldersByExternalIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="GetFoldersByExternalIdResult" nillable="true" type="q12:ArrayOfFolder" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetFoldersByExternalIdResult" nillable="true" type="q12:ArrayOfFolder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -80,7 +81,7 @@
   <xs:element name="GetAllFoldersByExternalIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="GetAllFoldersByExternalIdResult" nillable="true" type="q16:ArrayOfFolder" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetAllFoldersByExternalIdResult" nillable="true" type="q16:ArrayOfFolder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -126,7 +127,7 @@
   <xs:element name="GetSessionsListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="GetSessionsListResult" nillable="true" type="q25:ListSessionsResponse" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetSessionsListResult" nillable="true" type="q25:ListSessionsResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -142,15 +143,31 @@
   <xs:element name="GetFoldersListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="GetFoldersListResult" nillable="true" type="q28:ListFoldersResponse" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetFoldersListResult" nillable="true" type="q28:ListFoldersResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCreatorFoldersList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q29:AuthenticationInfo" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="request" nillable="true" type="q30:ListFoldersRequest" />
+        <xs:element minOccurs="0" name="searchQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCreatorFoldersListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="GetCreatorFoldersListResult" nillable="true" type="q31:ListFoldersResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="UpdateSessionName">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q29:AuthenticationInfo" />
-        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q30:guid" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q32:AuthenticationInfo" />
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q33:guid" />
         <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -163,8 +180,8 @@
   <xs:element name="UpdateSessionDescription">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q31:AuthenticationInfo" />
-        <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q32:guid" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q34:AuthenticationInfo" />
+        <xs:element xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q35:guid" />
         <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -177,8 +194,8 @@
   <xs:element name="UpdateSessionIsBroadcast">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q33:AuthenticationInfo" />
-        <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q34:guid" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q36:AuthenticationInfo" />
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q37:guid" />
         <xs:element minOccurs="0" name="isBroadcast" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
@@ -191,8 +208,8 @@
   <xs:element name="UpdateSessionOwner">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q35:AuthenticationInfo" />
-        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q36:ArrayOfguid" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q38:AuthenticationInfo" />
+        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q39:ArrayOfguid" />
         <xs:element minOccurs="0" name="newOwnerUserKey" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -205,9 +222,9 @@
   <xs:element name="MoveSessions">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q37:AuthenticationInfo" />
-        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q38:ArrayOfguid" />
-        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q39:guid" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q40:AuthenticationInfo" />
+        <xs:element xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q41:ArrayOfguid" />
+        <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q42:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -219,8 +236,8 @@
   <xs:element name="UpdateSessionExternalId">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q40:AuthenticationInfo" />
-        <xs:element xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q41:guid" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q43:AuthenticationInfo" />
+        <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q44:guid" />
         <xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -233,8 +250,8 @@
   <xs:element name="UpdateFolderName">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q42:AuthenticationInfo" />
-        <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q43:guid" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q45:AuthenticationInfo" />
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q46:guid" />
         <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -247,8 +264,8 @@
   <xs:element name="UpdateFolderDescription">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q44:AuthenticationInfo" />
-        <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q45:guid" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q47:AuthenticationInfo" />
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q48:guid" />
         <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -261,8 +278,8 @@
   <xs:element name="UpdateFolderEnablePodcast">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q46:AuthenticationInfo" />
-        <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q47:guid" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q49:AuthenticationInfo" />
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q50:guid" />
         <xs:element minOccurs="0" name="enablePodcast" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
@@ -275,8 +292,8 @@
   <xs:element name="UpdateFolderAllowPublicNotes">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q48:AuthenticationInfo" />
-        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q49:guid" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q51:AuthenticationInfo" />
+        <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q52:guid" />
         <xs:element minOccurs="0" name="allowPublicNotes" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
@@ -289,8 +306,8 @@
   <xs:element name="UpdateFolderAllowSessionDownload">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q50:AuthenticationInfo" />
-        <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q51:guid" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q53:AuthenticationInfo" />
+        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q54:guid" />
         <xs:element minOccurs="0" name="allowSessionDownload" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
@@ -303,9 +320,9 @@
   <xs:element name="UpdateFolderParent">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q52:AuthenticationInfo" />
-        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q53:guid" />
-        <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="parentId" nillable="true" type="q54:guid" />
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q55:AuthenticationInfo" />
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q56:guid" />
+        <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="parentId" nillable="true" type="q57:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -317,8 +334,8 @@
   <xs:element name="UpdateFolderExternalId">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q55:AuthenticationInfo" />
-        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q56:guid" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q58:AuthenticationInfo" />
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q59:guid" />
         <xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -331,8 +348,8 @@
   <xs:element name="DeleteSessions">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q57:AuthenticationInfo" />
-        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q58:ArrayOfguid" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q60:AuthenticationInfo" />
+        <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="sessionIds" nillable="true" type="q61:ArrayOfguid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -344,8 +361,8 @@
   <xs:element name="DeleteFolders">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q59:AuthenticationInfo" />
-        <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderIds" nillable="true" type="q60:ArrayOfguid" />
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q62:AuthenticationInfo" />
+        <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderIds" nillable="true" type="q63:ArrayOfguid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -357,7 +374,7 @@
   <xs:element name="ProvisionExternalCourse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q61:AuthenticationInfo" />
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q64:AuthenticationInfo" />
         <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string" />
       </xs:sequence>
@@ -366,24 +383,24 @@
   <xs:element name="ProvisionExternalCourseResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="ProvisionExternalCourseResult" nillable="true" type="q62:Folder" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="ProvisionExternalCourseResult" nillable="true" type="q65:Folder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="SetExternalCourseAccess">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q63:AuthenticationInfo" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q66:AuthenticationInfo" />
         <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="externalId" nillable="true" type="xs:string" />
-        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderIds" nillable="true" type="q64:ArrayOfguid" />
+        <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="folderIds" nillable="true" type="q67:ArrayOfguid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="SetExternalCourseAccessResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V42.Soap" minOccurs="0" name="SetExternalCourseAccessResult" nillable="true" type="q65:ArrayOfFolder" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V46.Soap" minOccurs="0" name="SetExternalCourseAccessResult" nillable="true" type="q68:ArrayOfFolder" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -395,15 +412,15 @@
   <xs:element name="GetRecorderDownloadUrlsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="GetRecorderDownloadUrlsResult" nillable="true" type="q66:RecorderDownloadUrlResponse" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="GetRecorderDownloadUrlsResult" nillable="true" type="q69:RecorderDownloadUrlResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CreateNoteByRelativeTime">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q67:AuthenticationInfo" />
-        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q68:guid" />
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q70:AuthenticationInfo" />
+        <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q71:guid" />
         <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="channel" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="timestamp" type="xs:double" />
@@ -413,15 +430,15 @@
   <xs:element name="CreateNoteByRelativeTimeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateNoteByRelativeTimeResult" type="q69:guid" />
+        <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateNoteByRelativeTimeResult" type="q72:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CreateNoteByAbsoluteTime">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q70:AuthenticationInfo" />
-        <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q71:guid" />
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q73:AuthenticationInfo" />
+        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q74:guid" />
         <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="channel" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="timestamp" type="xs:dateTime" />
@@ -431,16 +448,16 @@
   <xs:element name="CreateNoteByAbsoluteTimeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateNoteByAbsoluteTimeResult" type="q72:guid" />
+        <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="CreateNoteByAbsoluteTimeResult" type="q75:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="EditNote">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q73:AuthenticationInfo" />
-        <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q74:guid" />
-        <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q75:guid" />
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q76:AuthenticationInfo" />
+        <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q77:guid" />
+        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q78:guid" />
         <xs:element minOccurs="0" name="newText" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
@@ -453,9 +470,9 @@
   <xs:element name="DeleteNote">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q76:AuthenticationInfo" />
-        <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q77:guid" />
-        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q78:guid" />
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q79:AuthenticationInfo" />
+        <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q80:guid" />
+        <xs:element xmlns:q81="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q81:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -467,26 +484,26 @@
   <xs:element name="GetNote">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q79:AuthenticationInfo" />
-        <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q80:guid" />
-        <xs:element xmlns:q81="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q81:guid" />
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q82:AuthenticationInfo" />
+        <xs:element xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="noteId" type="q83:guid" />
+        <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q84:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetNoteResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="GetNoteResult" nillable="true" type="q82:Note" />
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="GetNoteResult" nillable="true" type="q85:Note" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ListNotes">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q83:AuthenticationInfo" />
-        <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q84:guid" />
-        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="pagination" nillable="true" type="q85:Pagination" />
-        <xs:element xmlns:q86="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="creatorId" nillable="true" type="q86:guid" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q86:AuthenticationInfo" />
+        <xs:element xmlns:q87="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q87:guid" />
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="pagination" nillable="true" type="q88:Pagination" />
+        <xs:element xmlns:q89="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="creatorId" nillable="true" type="q89:guid" />
         <xs:element minOccurs="0" name="channel" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="searchQuery" nillable="true" type="xs:string" />
       </xs:sequence>
@@ -495,16 +512,16 @@
   <xs:element name="ListNotesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="ListNotesResult" nillable="true" type="q87:ListNotesResponse" />
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="ListNotesResult" nillable="true" type="q90:ListNotesResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AreUsersNotesPublic">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q88:AuthenticationInfo" />
-        <xs:element xmlns:q89="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="userId" type="q89:guid" />
-        <xs:element xmlns:q90="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q90:guid" />
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q91:AuthenticationInfo" />
+        <xs:element xmlns:q92="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="userId" type="q92:guid" />
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q93:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -518,8 +535,8 @@
   <xs:element name="SetNotesPublic">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q91:AuthenticationInfo" />
-        <xs:element xmlns:q92="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q92:guid" />
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q94:AuthenticationInfo" />
+        <xs:element xmlns:q95="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q95:guid" />
         <xs:element minOccurs="0" name="areNotesPublic" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
@@ -532,8 +549,8 @@
   <xs:element name="IsDropbox">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q93:AuthenticationInfo" />
-        <xs:element xmlns:q94="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q94:guid" />
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q96:AuthenticationInfo" />
+        <xs:element xmlns:q97="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="folderId" type="q97:guid" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -547,8 +564,8 @@
   <xs:element name="CreateCaptionByRelativeTime">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q95:AuthenticationInfo" />
-        <xs:element xmlns:q96="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q96:guid" />
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q98:AuthenticationInfo" />
+        <xs:element xmlns:q99="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q99:guid" />
         <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="timestamp" type="xs:double" />
       </xs:sequence>
@@ -562,8 +579,8 @@
   <xs:element name="CreateCaptionByAbsoluteTime">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q97:AuthenticationInfo" />
-        <xs:element xmlns:q98="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q98:guid" />
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q100:AuthenticationInfo" />
+        <xs:element xmlns:q101="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q101:guid" />
         <xs:element minOccurs="0" name="text" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="timestamp" type="xs:dateTime" />
       </xs:sequence>
@@ -577,8 +594,8 @@
   <xs:element name="UploadTranscript">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q99:AuthenticationInfo" />
-        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q100:guid" />
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/Panopto.Server.Services.PublicAPI.V40" minOccurs="0" name="auth" nillable="true" type="q102:AuthenticationInfo" />
+        <xs:element xmlns:q103="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="sessionId" type="q103:guid" />
         <xs:element minOccurs="0" name="file" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="68064795-ae40-4bb5-820a-d7f83445e9f8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2123cbc9-ba6f-44e1-988d-9d41bce09715" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,16 +19,17 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://granitevm.panopto.local/Panopto/PublicAPI/4.6/SessionManagement.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="SessionManagement.xsd" MetadataType="Schema" ID="a434aa35-9d4f-4482-b2e7-5a5b767dd8d6" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd1" />
-    <MetadataFile FileName="SessionManagement.disco" MetadataType="Disco" ID="44a7d485-2c50-4f7f-a255-9042407ed360" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?disco" />
-    <MetadataFile FileName="SessionManagement1.xsd" MetadataType="Schema" ID="b925bc1d-1146-44f0-aeb7-db1db10f55dd" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd4" />
-    <MetadataFile FileName="SessionManagement.wsdl" MetadataType="Wsdl" ID="ae65822e-194a-4652-a1eb-b3fb6fcd18e3" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?wsdl" />
-    <MetadataFile FileName="SessionManagement2.xsd" MetadataType="Schema" ID="74bc29e4-23f9-4233-b39c-cbb04a2c81d4" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd0" />
-    <MetadataFile FileName="SessionManagement3.xsd" MetadataType="Schema" ID="fa3c1e93-1eb2-4125-b7b8-d9e63fcd04f2" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd3" />
-    <MetadataFile FileName="SessionManagement4.xsd" MetadataType="Schema" ID="32ba569f-9248-4a81-9181-a61f50842183" SourceId="1" SourceUrl="https://testing.panopto.com/Panopto/PublicAPISSL/4.2/SessionManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="SessionManagement.xsd" MetadataType="Schema" ID="5bda3dd4-6ad1-4cf6-af81-22276e90ec76" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd3" />
+    <MetadataFile FileName="SessionManagement1.xsd" MetadataType="Schema" ID="6ccf7052-a63e-441a-b39c-870b22bfae9c" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd1" />
+    <MetadataFile FileName="SessionManagement.wsdl" MetadataType="Wsdl" ID="e21e6b4c-4b32-47d1-811f-36f2416b94ff" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?wsdl" />
+    <MetadataFile FileName="SessionManagement2.xsd" MetadataType="Schema" ID="e0f3b24b-ae1b-45fa-b0c8-d562355d8e80" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd0" />
+    <MetadataFile FileName="SessionManagement3.xsd" MetadataType="Schema" ID="e4f0798c-02c4-438d-9d4d-584e5de8d72f" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="SessionManagement4.xsd" MetadataType="Schema" ID="120c44a7-722e-41fe-adde-986f997be6dc" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd5" />
+    <MetadataFile FileName="SessionManagement5.xsd" MetadataType="Schema" ID="31c95fe5-27f1-4d0f-adab-712fd6e7c017" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?xsd=xsd4" />
+    <MetadataFile FileName="SessionManagement.disco" MetadataType="Disco" ID="50e72b99-45af-4eb5-be68-7116e0ef46d1" SourceId="1" SourceUrl="https://granitevm.panopto.local/Panopto/PublicAPISSL/4.6/SessionManagement.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

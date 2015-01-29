@@ -170,6 +170,9 @@
     <None Include="Service References\PanoptoSessionManagement\SessionManagement4.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\PanoptoSessionManagement\SessionManagement5.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\PanoptoUserManagement\BatchUserCreationWithGroupGUI.PanoptoUserManagement.Group.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -225,6 +228,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\PanoptoUserManagement\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PanoptoUserManagement\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PanoptoUserManagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Service References\PanoptoSessionManagement\SessionManagement.disco" />
   </ItemGroup>
   <ItemGroup>
@@ -235,18 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\PanoptoSessionManagement\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\PanoptoUserManagement\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\PanoptoUserManagement\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\PanoptoUserManagement\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
