@@ -19,6 +19,7 @@ Groups are not a required part of the CSV file, and there can by any number of g
 CSV File Format: UserName,FirstName,LastName,EmailAddress[, Groups]
 
 Sample CSV file format:
-aaa,aa,a,aaa@foo.com,foo,bar,otherGroups
-aab,aa,b,aab@foo.com,foo,bar
-aac,aa,c,aac@foo.com
+
+	aaa,aa,a,aaa@foo.com,foo,bar,otherGroups
+	aab,aa,b,aab@foo.com,foo,bar
+	aac,aa,c,aac@foo.com
